@@ -11,7 +11,7 @@ skinparam usecase {
 }
 left to right direction
 actor P0 as "Человек"
-actor M0 as "Рабочая машина"
+actor M0 as "Программное обеспечение"
 actor P as "Команда разработчиков"
 actor M as "Средства разработки"
 usecase A as "Разработка WEB - приложения"
