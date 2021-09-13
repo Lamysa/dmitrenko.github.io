@@ -1,0 +1,12 @@
+ @startuml
+skinparam class {
+	BackgroundColor White
+	ArrowColor Black
+	BorderColor Black
+}
+class "Команда разработчиков" as P {
+ Средства разработки
+Разработка WEB - приложения (ТЗ структуры сайта, временные рамки разработки)
+}
+hide circle
+@enduml
