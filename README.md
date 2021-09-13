@@ -1,4 +1,4 @@
-# студент группы [ИДБ-18-07](https://github.com/stankin/design-2018/wiki/list-idb-18-07) Дмитренко Сергей Сергеевич
+# Студент группы [ИДБ-18-07](https://github.com/stankin/design-2018/wiki/list-idb-18-07) Дмитренко Сергей Сергеевич
 
 ## Отчет о семинарах
 
