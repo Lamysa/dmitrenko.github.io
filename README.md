@@ -3,6 +3,7 @@
 ## Отчет о семинарах
 
 ### [Семинар 1](https://github.com/stankin/design-part-1/wiki/sem1)
+### [Семинар 2](https://github.com/stankin/design-part-1/wiki/sem2)
 
 ## Отчет о лабораторных работах
 
