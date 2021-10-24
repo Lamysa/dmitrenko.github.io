@@ -9,3 +9,4 @@
 
 ### [Лабораторная работа 1 - Знакомство с основными инструментами и нотациями](https://github.com/Lamysa/dmitrenko.github.io/wiki/%D0%9B%D0%B0%D0%B1%D0%BE%D1%80%D0%B0%D1%82%D0%BE%D1%80%D0%BD%D0%B0%D1%8F-%D1%80%D0%B0%D0%B1%D0%BE%D1%82%D0%B0-%E2%84%961)
 ### [Лабораторная работа 2 - Определение подсистемы и надсистемы](https://github.com/Lamysa/dmitrenko.github.io/wiki/%D0%9B%D0%B0%D0%B1%D0%BE%D1%80%D0%B0%D1%82%D0%BE%D1%80%D0%BD%D0%B0%D1%8F-%D1%80%D0%B0%D0%B1%D0%BE%D1%82%D0%B0-%E2%84%962)
+### [Лабораторная работа 3 - Определение способов существования информации](https://github.com/Lamysa/dmitrenko.github.io/wiki/%D0%9B%D0%B0%D0%B1%D0%BE%D1%80%D0%B0%D1%82%D0%BE%D1%80%D0%BD%D0%B0%D1%8F-%D1%80%D0%B0%D0%B1%D0%BE%D1%82%D0%B0-%E2%84%963)
