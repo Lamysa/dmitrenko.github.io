@@ -1,0 +1,36 @@
+@startuml
+skinparam actor {
+	BackgroundColor White
+	ArrowColor Black
+	BorderColor Black
+}
+autonumber
+
+actor "Team Leader" as user
+database "Проекты на рассмотрение" as db
+control "Среда разработки" as po
+control "Форма оформления ошибки" as error
+database "Распределение задач" as dbz
+
+loop
+   user -> db: Проверка наличия проектов на проверку
+   db --> user: Проект для Code Review
+end
+
+== Code Review ==
+
+loop
+   user -> po: Проверка проекта
+   activate po
+   po -> error: Выявление недочетов или пожеланий к дополнению
+   activate error
+   error -> dbz: Наличие недочетов или пожеланий к дополнению
+   activate dbz
+   dbz --> error: Назначение программиста на исправление
+   deactivate dbz
+   deactivate error
+   error --> po: Завершение выявления недочетов
+   deactivate po
+   po --> user: Завершение проверки
+end
+@enduml
