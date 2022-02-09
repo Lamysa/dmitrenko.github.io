@@ -3,6 +3,7 @@
 ## Реферат
 
 ### [Основные приёмы экстремального программирования. Парное программирование и ревизия кода (Code Review).](https://github.com/stankin/design-part-1/wiki/exam05-5)
+### [Планирование и проведение совещаний.](https://github.com/stankin/design-part-2/wiki/exam04-5)
 
 ## Отчет о семинарах
 
