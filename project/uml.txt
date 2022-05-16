@@ -1,0 +1,72 @@
+@startuml
+skinparam actor {
+	BackgroundColor White
+	ArrowColor Black
+	BorderColor Black
+}
+autonumber
+
+actor "Администратор" as admin
+control "Frontend сайта" as frontend
+control "controllers" as controllers
+control "models" as models
+database "База данных" as bd
+
+admin -> frontend: Авторизация в админ. панели
+frontend -> controllers: POST отправка учетных данных
+controllers -> models: Запрос проверки учетных данных
+models-> bd: Запрос на получение информации о пользователе-
+bd -> models: Информации о пользователе
+models -> controllers: Результат проверки учетных данных
+controllers -> frontend: JSON результат проверки
+frontend -> admin: Результат авторизации
+
+== Проверка наличия комлектующих ==
+
+loop
+ admin -> frontend: Проверка наличия комплектующих
+ frontend -> controllers: Запуск скрипта проверки
+ controllers -> models: Анализ наличия комплектующих
+ models-> bd: Запрос на получение информации о комплектующих
+ bd -> models: Информации о комплектующих
+ models -> controllers: Результат проверки наличия комплектующих
+
+ alt Комплектующие не требуют пополнения
+  controllers -> frontend: Результат анализа скрипта
+  frontend -> admin: Отсутствие уведомления
+
+ else Комплектующие требуют пополнения
+  controllers -> models: Запрос на получение списка комплектующих, требующих пополнения, и их поставщиков
+  models -> bd: Запрос на получение информации о комплектующих и поставщиках
+  bd -> models: Информации о комплектующих и поставщиках
+  models -> controllers: Список комплектующих и их поставщиков
+  controllers -> frontend: Формирование заказа комплектующих поставщикам
+  frontend -> admin: Сформированный заказ поставщикам
+ end
+end
+
+== Управление комлектующими и продукцией ==
+
+loop
+ admin -> frontend: Добавление новой продукции \ комплектующих 
+ frontend -> controllers: POST отправка введенных данных
+ controllers -> models: Формирование запроса на добавление данных
+ models-> bd: Добавление данных в БД
+ bd -> models: Результат добавления данных в БД
+ models -> controllers: Результат запроса
+ controllers -> frontend: JSON результат добавления данных
+ frontend -> admin: Добавленная продукиция \ комплектующие
+end
+
+loop
+ admin -> frontend: Изменение информации продукции \ комплектующих
+ frontend -> controllers: POST отправка введенных данных
+ controllers -> models: Формирование запроса на изменение данных
+ models-> bd: Изменение данных в БД
+ bd -> models: Результат изменения данных в БД
+ models -> controllers: Результат запроса
+ controllers -> frontend: JSON результат изменения данных
+ frontend -> admin: Измененная информация продукции \ комплектующих
+end
+
+@enduml
