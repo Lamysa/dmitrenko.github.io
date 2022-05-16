@@ -1,0 +1,18 @@
+@startuml
+skinparam monochrome true
+
+component [Frontend] as Frontend
+component [Controller] as Controller
+component [Model] as Model
+component [База данных] as bd
+
+() "HTTP" as http
+() "Протокол mysql" as mysql
+
+Frontend - http
+http - Controller
+Controller - Model
+Model - mysql
+mysql - bd
+
+@enduml
