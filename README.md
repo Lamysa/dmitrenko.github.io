@@ -21,3 +21,7 @@
 ### [Семинар 3-4 - Управление в гибкой разработке программного обеспечения, методы Канбан и Скрам. Прототипирование в разработке программного обеспечения](https://github.com/Lamysa/dmitrenko.github.io/wiki/Отчет-о-разработке-web---игры-Space-Discovery)
 
 ### [Лабораторная работа 4-6 - Деловая игра](https://github.com/Lamysa/CpaceDiscoveryGame.io)
+
+## Курсовой проект
+
+### [Курсовой проект](https://github.com/Lamysa/dmitrenko.github.io/wiki/Курсовой-проект)
